@@ -7,9 +7,11 @@ namespace TodoApi.Models
     {
         public TodoContext(DbContextOptions<TodoContext> options) : base(options)
         {
-
+            //TodoItems.Add(new TodoItem("maths", true));
         }
 
         public DbSet<TodoItem> TodoItems { get; set; }
+
+
     }
 }
